@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/7592e487ad.js" crossorigin="anonymous"></script>
+
+    <title>Brainskuy</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav >
+          <div class="logo">
+            <img src="" alt="" />
+            <span>Brainskuy</span>
+          </div>
+          <button id="menu" class="button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="" id="desktop">
+            <a href="">
+              <li>
+                <span>Home</span>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <span>About</span>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <span>Features</span>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <span>Pricing</span>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <span>Testimonial</span>
+              </li>
+            </a>
+            <div class="sign-join">
+                <button onclick="modal(false)" class="button light">SIGN IN</button>
+                <a href="" class="button">JOIN NOW</a>
+              </div>
+          </ul>
+         
+        </nav>
+      </header>
+      <main>
+        <section class="content">
+          <div class="left">
+              <img src="https://img.freepik.com/free-vector/accesible-education-online-courses-elderly-isometric-old-people-online-education-concept-illustration-old-senior-education-elderly-person-use-computer_80590-8645.jpg" alt="">
+          </div>
+          <div class="right">
+            <div class="description">
+              <h1>Digital brainstorming easy & fast with</h1>
+              <h1>brainskuy</h1>
+              <p>
+               A platform that can be used to manage any project team, from simple to complex. Individuals and small groups are advised to use this product.
+              </p>
+              <div class="start-demo">
+                  <a href="" class="button">
+                        <span>Start Now</span>  
+                    </a>
+                  <a href="" class="button light">
+                      <span>Watch the demo</span>
+                      <i class="fa-solid fa-circle-play"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-regular fa-comment-dots"></i>
+                </div>
+                <div class="card-right">
+                    <span>Interactive Discussion</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, temporibus?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="card-right">
+                    <span>Collaboration</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, temporibus?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-box-archive"></i>
+                </div>
+                <div class="card-right">
+                    <span>Big Storage</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, temporibus?</p>
+                </div>
+            </div>
+        </section>
+      </main>
+    </div>
+
+
+
+
+    <div class="modal sr-only" id="modal">
+        <div class="modal-wrapper">
+            <h1>ERRO 404</h1>
+            <button onclick="modal(true)" class="button">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        function modal(modal){
+            if(modal){
+                document.getElementById('modal').classList.add('sr-only')
+            }else{
+                document.getElementById('modal').classList.remove('sr-only')
+            }
+        }
+
+        const menu = document.getElementById('menu');
+        menu.addEventListener('click', ()=>{
+            const desktop = document.getElementById('desktop');
+            desktop.classList.toggle('active')
+        })
+
+    </script>
+  </body>
+</html>
